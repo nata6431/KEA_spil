@@ -244,24 +244,29 @@
 }
 
 #start {
+    position: absolute;
     background-image: url("svg/titel.svg");
-    background-image: url("svg/Baggrund.svg");
     background-size: cover;
-    width: 90vw;
-    height: 45vw;
-    display: none;
+    width: 100vw;
+    height: 56.2vw;
+    top: 0;
+    left: 0;
+    z-index: 7;
+
 }
 
 
 #settings {
+
     background-image: url("svg/settibgudenknapsvg.svg");
     background-repeat: no-repeat;
     width: 30vw;
-    height: 45vw;
+    height: 50vw;
     position: absolute;
-    top: 60vw;
-    left: 4vw;
-    z-index: 2;
+    top: -1vw;
+    left: vw;
+    z-index: 8;
+
 
 }
 
@@ -274,8 +279,8 @@
     position: absolute;
     top: 3vw;
     left: 20vw;
-    z-index: 3;
-    display: none;
+    z-index: 6;
+
 }
 
 #levelcomplete {
@@ -286,11 +291,72 @@
     position: absolute;
     top: 3vw;
     left: 20vw;
-    z-index: 3;
-    display: none;
+    z-index: 6;
+
 }
 
 
+.gaa {
+
+    animation-name: gaa_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes gaa_kf {
+   0%   {top: 20px;}
+    25%  {top: 100px;}
+    50%  {top: 150px;}
+    75%  {top: 200px;}
+    100% {top: 0px;}
+}
+
+.hop {
+
+    animation-name: hop_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes hop_kf {
+    0%   {top: 10px;}
+    25%  {top: 200px;}
+    50%  {top: 100px;}
+    75%  {top: 200px;}
+    100% {top: 0px;}
+}
+
+.loeb {
+
+    animation-name: loeb_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes loeb_kf {
+    0%   {top: 30px;}
+    25%  {top: 100px;}
+    50%  {top: 50px;}
+    75%  {top: 250px;}
+    100% {top: 0px;}
+}
+
+.slaa {
+
+    animation-name: slaa_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes slaa_kf {
+
+}
 
 
--gameover skal ing og vundet skal ind sat rigtigt på skærmen og gemmes væk bagefter
+.hide {
+    display: none;
+}
