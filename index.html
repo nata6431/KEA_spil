@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>SSSHHH TI STILLE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,19 +15,34 @@
             <div id="game_background"></div>
 
             <div id="game_elements">
-                <div id="hånd" class="slaa"></div>
-                <div id="smiler" class="gaa"></div>
+
+                <div id="smiler0" class="gaa1"></div>
                 <div id="smiler1" class="gaa"></div>
-                <div id="smiler2" class="gaa"></div>
+                <div id="smiler2" class="gaa1"></div>
                 <div id="smiler3" class="loeb1"></div>
                 <div id="smiler4" class="loeb2"></div>
-                <div id="snakker" class="hop"></div>
-                <div id="snakker1" class="hop"></div>
-                <div id="snakker2" class="hop"></div>
+                <div id="snakker0" class="hop"></div>
+                <div id="snakker1" class="hop1"></div>
+                <div id="snakker2" class="hop2"></div>
                 <div id="snakker3" class="loeb3"></div>
                 <div id="snakker4" class="loeb4"></div>
                 <div id="play"></div>
-                  <div id="settingsknap"></div>
+                <div id="timering"></div>
+                <div id="settingsknap"></div>
+                <div id="score">0</div>
+                <div id="intro" class="hide"></div>
+                <div id="kryds" class="hide"></div>
+
+
+                <a href="javascript:history.go(0)">
+                    <div id="proevigen" class="hide"></div>
+
+                </a>
+
+
+                <div id="introkryds" class="hide"></div>
+
+
 
 
 
@@ -35,18 +50,40 @@
 
             <div id="game_ui">
                 <div id="points"></div>
-                <div id="energy"></div>
-                <div id="energy1"></div>
-                <div id="energy2"></div>
                 <div id="time"></div>
             </div>
         </div>
-        <div id="start" class="hide"></div>
+        <div id="start"></div>
         <div id="settings" class="hide"></div>
+        <div id="setting_effekt_sound" class="hide">
+
+            <div id="sfx" class="on">
+                <div id="sfx_sprite"></div>
+            </div>
+        </div>
+        <div id="setting_music" class="hide">
+
+            <div id="music" class="on">
+                <div id="music_sprite"></div>
+            </div>
+
+        </div>
         <div id="gameover" class="hide"></div>
         <div id="levelcomplete" class="hide"></div>
 
     </div>
+
+    <audio src="lyd/slaalyd.mp3" id="slaa"></audio>
+
+    <audio id="lyd">
+        <source src="lyd/slaalyd.mp3" type="audio/mpeg">
+    </audio>
+    <audio loop id="musik">
+        <source src="mjusikk_01.mp3" type="audio/mpeg">
+    </audio>
+
+
+
     <script src="script.js"></script>
 </body>
 
